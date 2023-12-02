@@ -163,7 +163,7 @@ h1,h2,h3{
     grid-template-rows: repeat(2,auto);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .nosotros{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
@@ -174,10 +174,29 @@ h1,h2,h3{
     grid-row: 1/2;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .nosotros__imagen{
         grid-column: 2/3;
         width: 100%;
     }
 }
 
+/* Bloques */
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.bloque_titulo{
+    margin: 0;
+}
+@media (min-width: 767px) {
+    .bloques{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .bloque__imagen{
+        grid-column: auto;
+        grid-row: 1/2;
+    }    
+}
